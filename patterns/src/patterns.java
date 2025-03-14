@@ -84,8 +84,8 @@ public class patterns {
         }
     }
     public static void pattern9(int n){
-//        pattern7(n);
-//        pattern8(n);
+        // pattern7(n)
+        // pattern8(n)
         System.out.println("Pattern-9 : ");
         for (int i = 0; i < n; i++) {
             for (int k = 0; k < (n-i-1); k++) {
@@ -129,7 +129,7 @@ public class patterns {
     }
     public static void pattern11(int n){
         System.out.println("Pattern-11 : ");
-        int start=1;
+        int start;
         for (int i = 1; i <= n; i++) {
             if(i%2==0) start=0;
             else start=1;
@@ -207,7 +207,6 @@ public class patterns {
                 if(j<=breakpoint) ch++;
                 else ch--;
             }
-
             for (int j = 0; j < n-i-1; j++) {
                 System.out.print(" ");
             }
@@ -215,6 +214,7 @@ public class patterns {
         }
     }
     public static void pattern18(int n){
+        System.out.println("Pattern-18 : ");
         for (int i = 0; i < n; i++) {
             char ch = (char)('A'+(n-1)-i);
             for(char j =ch;j <= 'A'+(n-1);j++){
@@ -224,6 +224,7 @@ public class patterns {
         }
     }
     public static void pattern19(int n){
+        System.out.println("Pattern-19 : ");
         int spaces = 0;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n-i; j++) {
@@ -254,6 +255,7 @@ public class patterns {
         }
     }
     public static void pattern20(int n){
+        System.out.println("Pattern-20: ");
         int spaces = 2*n-2;
         for (int i = 0; i < 2*n-1; i++) {
             int stars = i<n ? i+1 : (2*n-1)-i;
@@ -272,6 +274,7 @@ public class patterns {
         }
     }
     public static void pattern21(int n){
+        System.out.println("Pattern-21 : ");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if(i==0 || j==0 || i==n-1 || j==n-1){
@@ -283,13 +286,12 @@ public class patterns {
         }
     }
     public static void pattern22(int n){
+        System.out.println("Pattern-22 : ");
         for (int i = 0; i < 2*n-1; i++) {
             for (int j = 0; j < 2*n-1; j++) {
-                int top = i;
-                int left = j;
                 int right = (2*n-2)-j;
                 int down = (2*n-2)-i;
-                int minValue = Math.min(Math.min(top,down),Math.min(left,right));
+                int minValue = Math.min(Math.min(i,down),Math.min(j,right));
                 System.out.print(n- minValue+" ");
             }
             System.out.println();
@@ -300,27 +302,50 @@ public class patterns {
     
     public static void main(String[] args) {
         System.out.println("Striver's Patterns : ");
-//        pattern1(5);
-//        pattern2(5);
-//        pattern3(5);
-//        pattern4(5);
-//        pattern5(5);
-//        pattern6(5);
-//        pattern7(5);
-//        pattern8(5);
-//        pattern9(5);
-//        pattern10(5);
-//        pattern11(5);
-//        pattern12(5);
-//        pattern13(5);
-//        pattern14(5);
-//        pattern15(5);
-//        pattern16(5);
-//        pattern17(5);
-//        pattern18(5);
-//        pattern19(5);
-//        pattern20(5);
-//        pattern21(5);
+        pattern1(5);
+        System.out.println();
+        pattern2(5);
+        System.out.println();
+        pattern3(5);
+        System.out.println();
+        pattern4(5);
+        System.out.println();
+        pattern5(5);
+        System.out.println();
+        pattern6(5);
+        System.out.println();
+        pattern7(5);
+        System.out.println();
+        pattern8(5);
+        System.out.println();
+        pattern9(5);
+        System.out.println();
+        pattern10(5);
+        System.out.println();
+        pattern11(5);
+        System.out.println();
+        pattern12(5);
+        System.out.println();
+        pattern13(5);
+        System.out.println();
+        pattern14(5);
+        System.out.println();
+        pattern15(5);
+        System.out.println();
+        pattern16(5);
+        System.out.println();
+        pattern17(5);
+        System.out.println();
+        pattern18(5);
+        System.out.println();
+        pattern19(5);
+        System.out.println();
+        pattern20(5);
+        System.out.println();
+        pattern21(5);
+        System.out.println();
         pattern22(5);
+        System.out.println();
+
     }
 }
